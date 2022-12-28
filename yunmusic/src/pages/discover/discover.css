@@ -1,0 +1,36 @@
+.discover {
+  background-color: #c20c0c;
+}
+.discover .nvbar {
+  width: 8rem;
+  margin: 0 auto;
+  background-color: #c20c0c;
+  height: 0.4rem;
+  line-height: 0.4rem;
+  text-align: center;
+}
+.discover .nvbar .ant-menu-item-only-child {
+  padding: 0;
+  width: 0.9rem;
+}
+.discover .nvbar .ant-menu-item-only-child span {
+  height: 0.2rem;
+  line-height: 0.2rem;
+  padding: 0 10px;
+  border-radius: 50rem;
+  display: inline-block;
+  color: white;
+  font-size: 0.12rem;
+}
+.discover .nvbar .ant-menu-item-active span {
+  color: white;
+  background-color: #9b0909;
+}
+.discover .nvbar .ant-menu-item-selected span {
+  color: white;
+  background-color: #9b0909;
+}
+.discover .nvbar .ant-menu-item-selected::after,
+.discover .nvbar .ant-menu-submenu-selected::after {
+  display: none;
+}

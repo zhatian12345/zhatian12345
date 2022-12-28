@@ -1,0 +1,68 @@
+//主色调
+@main_color: #c20c0c;
+//导航栏颜色
+@bar-color: #242424;
+//导航栏选中颜色
+@bar-check-color: black;
+// 导航栏文字颜色
+@bar-font-color:#cccccc;
+//导航栏选中文字颜色
+@bar-check-font-color: white;
+
+Header {
+  background-color: @bar-color;
+  //导航栏
+  .nvbar {
+    width: 8rem;
+    margin: 0 auto;
+    background-color: @bar-color;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    text-align: center;
+    //导航栏块
+    .ant-menu-item-only-child {
+      padding: 0;
+
+      span {
+        padding: 0 20px;
+        display: inline-block;
+        color: @bar-font-color;
+      }
+    }
+
+    //导航栏块——鼠标放上
+    .ant-menu-item-active {
+      span {
+        color: @bar-check-font-color;
+        background-color: @bar-check-color;
+      }
+    }
+
+    //导航栏块——选中
+    .ant-menu-item-selected {
+      span {
+        color: @bar-check-font-color;
+        background-color: @bar-check-color;
+      }
+    }
+    .ant-menu-item-selected::after, .ant-menu-submenu-selected::after{
+      display: none;
+    }
+  }
+}
+Footer{
+  width: 100vw;
+  position: fixed;
+  bottom: 0;
+  background-color: #242424;
+  .Progress{
+    width: 90vw;
+    margin: 0 auto;
+    .proButton{
+      span{
+        color: white;
+      } 
+    }
+  }
+  
+}

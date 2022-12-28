@@ -1,0 +1,44 @@
+Header {
+  background-color: #242424;
+}
+Header .nvbar {
+  width: 8rem;
+  margin: 0 auto;
+  background-color: #242424;
+  height: 0.8rem;
+  line-height: 0.8rem;
+  text-align: center;
+}
+Header .nvbar .ant-menu-item-only-child {
+  padding: 0;
+}
+Header .nvbar .ant-menu-item-only-child span {
+  padding: 0 20px;
+  display: inline-block;
+  color: #cccccc;
+}
+Header .nvbar .ant-menu-item-active span {
+  color: white;
+  background-color: black;
+}
+Header .nvbar .ant-menu-item-selected span {
+  color: white;
+  background-color: black;
+}
+Header .nvbar .ant-menu-item-selected::after,
+Header .nvbar .ant-menu-submenu-selected::after {
+  display: none;
+}
+Footer {
+  width: 100vw;
+  position: fixed;
+  bottom: 0;
+  background-color: #242424;
+}
+Footer .Progress {
+  width: 90vw;
+  margin: 0 auto;
+}
+Footer .Progress .proButton span {
+  color: white;
+}

@@ -1,0 +1,60 @@
+// 颜色
+//导航栏颜色
+@discover-bar-color: #c20c0c;
+//导航栏选中颜色
+@discover-bar-check-color: #9b0909;
+//导航栏文字颜色
+@discover-bar-font-color:white;
+//导航栏选中文字颜色
+@discover-bar-check-font-color: white;
+
+// 长度
+// 导航栏高度
+@discover-bar-height: 0.4rem;
+
+//发现音乐-导航栏
+.discover {
+    background-color: @discover-bar-color;
+    .nvbar {
+        width: 8rem;
+        margin: 0 auto;
+        background-color: @discover-bar-color;
+        height: @discover-bar-height;
+        line-height: @discover-bar-height;
+        text-align: center;
+
+        //导航栏块
+        .ant-menu-item-only-child {
+            padding: 0;
+            width: 0.9rem;
+            span {
+                height: 0.2rem;
+                line-height: 0.2rem;
+                padding: 0 10px;
+                border-radius: 50rem;
+                display: inline-block;
+                color: @discover-bar-font-color;
+                font-size: 0.12rem;
+            }
+        }
+
+        //导航栏块——鼠标放上
+        .ant-menu-item-active {
+            span {
+                color: @discover-bar-check-font-color;
+                background-color: @discover-bar-check-color;
+            }
+        }
+
+        //导航栏块——选中
+        .ant-menu-item-selected {
+            span {
+                color: @discover-bar-check-font-color;
+                background-color: @discover-bar-check-color;
+            }
+        }
+        .ant-menu-item-selected::after, .ant-menu-submenu-selected::after{
+            display: none;
+          }
+    }
+}

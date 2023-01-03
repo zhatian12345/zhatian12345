@@ -2,11 +2,11 @@ Header {
   background-color: #242424;
 }
 Header .nvbar {
-  width: 8rem;
+  width: 800px;
   margin: 0 auto;
   background-color: #242424;
-  height: 0.8rem;
-  line-height: 0.8rem;
+  height: 70px;
+  line-height: 70px;
   text-align: center;
 }
 Header .nvbar .ant-menu-item-only-child {
@@ -28,17 +28,4 @@ Header .nvbar .ant-menu-item-selected span {
 Header .nvbar .ant-menu-item-selected::after,
 Header .nvbar .ant-menu-submenu-selected::after {
   display: none;
-}
-Footer {
-  width: 100vw;
-  position: fixed;
-  bottom: 0;
-  background-color: #242424;
-}
-Footer .Progress {
-  width: 90vw;
-  margin: 0 auto;
-}
-Footer .Progress .proButton span {
-  color: white;
 }

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from 'react-router-dom'
 import type { MenuProps } from 'antd';
 import { Menu } from 'antd';
 import './discover.css'
@@ -8,39 +9,39 @@ import { useLocation } from "react-router-dom";
 const items: MenuProps['items'] = [
     {
       label: (
-        <a href="/discover">推荐</a>
+        <Link to="/discover">推荐</Link>
       ),
       key: '/discover',
     },
     {
       label: (
-        <a href="/toplist">排行榜</a>
+        <Link to="/discover/toplist">排行榜</Link>
       ),
-      key: '/toplist',
+      key: '/discover/toplist',
     },
     {
       label: (
-        <a href="/playlist">歌单</a>
+        <Link to="/discover/playlist">歌单</Link>
       ),
-      key: '/playlist',
+      key: '/discover/playlist',
     },
     {
       label: (
-        <a href="/djradio">主播电台</a>
+        <Link to="/discover/djradio">主播电台</Link>
       ),
-      key: '/djradio',
+      key: '/discover/djradio',
     },
     {
       label: (
-        <a href="/artist">歌手</a>
+        <Link to="/discover/artist">歌手</Link>
       ),
-      key: '/artist',
+      key: '/discover/artist',
     },
     {
       label: (
-        <a href="/album">新碟上架</a>
+        <Link to="/discover/album">新碟上架</Link>
       ),
-      key: '/album',
+      key: '/discover/album',
     },
   ]
 const Discover = () => {

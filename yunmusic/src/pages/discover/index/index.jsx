@@ -4,6 +4,7 @@ import { useLocation } from "react-router-dom";
 import DiscoverBar from "../discover.jsx"
 
 const DiscoverInx = () => {
+    
     return (
         <div>
             <DiscoverBar/>

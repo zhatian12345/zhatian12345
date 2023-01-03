@@ -2,25 +2,25 @@
   background-color: #c20c0c;
 }
 .discover .nvbar {
-  width: 8rem;
+  width: 800px;
   margin: 0 auto;
   background-color: #c20c0c;
-  height: 0.4rem;
-  line-height: 0.4rem;
+  height: 35px;
+  line-height: 35px;
   text-align: center;
 }
 .discover .nvbar .ant-menu-item-only-child {
   padding: 0;
-  width: 0.9rem;
+  width: 98px;
 }
 .discover .nvbar .ant-menu-item-only-child span {
-  height: 0.2rem;
-  line-height: 0.2rem;
+  height: 25px;
+  line-height: 25px;
   padding: 0 10px;
   border-radius: 50rem;
   display: inline-block;
   color: white;
-  font-size: 0.12rem;
+  font-size: 12px;
 }
 .discover .nvbar .ant-menu-item-active span {
   color: white;

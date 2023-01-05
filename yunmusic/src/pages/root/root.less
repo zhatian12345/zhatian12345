@@ -1,5 +1,5 @@
-//主色调
-@main_color: #c20c0c;
+//引入公共颜色样式
+@import '../../style/less/color.less';
 //导航栏颜色
 @bar-color: #242424;
 //导航栏选中颜色
@@ -9,20 +9,25 @@
 //导航栏选中文字颜色
 @bar-check-font-color: white;
 
+// 尺寸
+// 导航栏长度
+@bar-width:800px;
+//导航栏高度
+@bar-height:70px;
+
 Header {
   background-color: @bar-color;
   //导航栏
   .nvbar {
-    width: 800px;
+    width: @bar-width;
     margin: 0 auto;
     background-color: @bar-color;
-    height: 70px;
-    line-height: 70px;
+    height: @bar-height;
+    line-height: @bar-height;
     text-align: center;
     //导航栏块
     .ant-menu-item-only-child {
       padding: 0;
-
       span {
         padding: 0 20px;
         display: inline-block;
@@ -40,13 +45,21 @@ Header {
 
     //导航栏块——选中
     .ant-menu-item-selected {
+      //选中下方小三角
+      .sub{
+        width: 0px;
+        height: 0px;
+        margin: -14px auto 0;
+        border:7px solid transparent;
+        border-bottom-color: @main-color;
+      }
       span {
         color: @bar-check-font-color;
         background-color: @bar-check-color;
       }
     }
-    .ant-menu-item-selected::after, .ant-menu-submenu-selected::after{
-      display: none;
-    }
+  }
+  .ant-menu-item::after{
+    display: none;
   }
 }

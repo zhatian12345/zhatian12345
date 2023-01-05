@@ -1,0 +1,140 @@
+//引入公共颜色样式
+@import '../../../style/less/color.less';
+//颜色
+//1.录播图
+//轮播图下方按钮颜色
+@ban-btnColor: #c8bac7;
+//2.列表
+//用户列表背景颜色
+@index-userList-backgroundColor: #f5f5f5;
+
+//尺寸
+//1.录播图
+// 轮播图图片长度
+@ban-imgWidth: 730px;
+@ban-imgHeight: 285px;
+//轮播图高度
+@ban-imgHeight: 285px;
+//轮播图下方按钮大小
+@ban-btnWidth: 7px;
+@ban-btnheight: 7px;
+//下载客户端组件长度
+@ban-downloadWidth: 253px;
+//2.列表
+//列表长度
+@index-List-heigth: 1730px;
+//左侧内容列表
+@index-ylist-with: 732px;
+//右侧用户列表
+@index-userlist-with: 250px;
+
+
+.yBody {
+    background-color: @back-color;
+
+    .download {
+        width: @ban-downloadWidth;
+        height: @ban-imgHeight;
+        margin: 0 auto -@ban-imgHeight;
+        right: -365px;
+        background-image: url('../../../style/img/download.png');
+        overflow: hidden;
+        position: relative;
+        z-index: 999;
+
+        p {
+            font-size: 12px;
+            margin: @ban-imgHeight - 30 auto 0;
+            text-align: center;
+            color: #8d8d8d;
+        }
+    }
+
+    // 轮播图
+    .Banner {
+
+        //录播图下方点
+        .slick-dots-bottom {
+            width: @ban-imgWidth;
+            margin: 0 auto;
+            padding-right: @ban-downloadWidth;
+
+            li {
+                button {
+                    width: @ban-btnWidth;
+                    height: @ban-btnheight;
+                    border-radius: 100%;
+                }
+
+                width: @ban-btnWidth;
+                height: @ban-btnheight;
+                background-color: @ban-btnColor;
+                border-radius: 100%;
+                margin: 8px;
+            }
+
+            li.slick-active {
+                width: @ban-btnWidth;
+                height: @ban-btnheight;
+                margin-left: 8px;
+
+                button {
+                    background-color: @main-color;
+                }
+
+            }
+        }
+
+        // 录播图背景
+        .ban-img {
+            width: @ban-imgWidth+@ban-downloadWidth;
+            height: @ban-imgHeight;
+            margin: 0 auto;
+
+            // 录播图图片
+            img {
+                display: inline-block;
+                width: @ban-imgWidth;
+                height: @ban-imgHeight;
+                vertical-align: top;
+                display: inline-block;
+                ;
+            }
+
+            // 下载客户端
+        }
+    }
+
+    .yContent {
+        width: @index-ylist-with + @index-userlist-with + 1px;
+        height: @index-List-heigth;
+        background-color: black;
+        margin: 0 auto;
+        border-left: 1px @border-color solid;
+        border-right: 1px @border-color solid;
+    }
+
+    .yList {
+        display: inline-block;
+        width: @index-ylist-with;
+        height: @index-List-heigth;
+        background-color: #ffffff;
+    }
+
+    .userList {
+        display: inline-block;
+        width: @index-userlist-with;
+        height: @index-List-heigth;
+        border-left: 1px @border-color solid;
+        background-color: @index-userList-backgroundColor;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .yBody {
+        .download {
+            right: 0;
+            margin: 0 @ban-imgWidth -@ban-imgHeight;
+        }
+    }
+}

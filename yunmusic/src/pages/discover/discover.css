@@ -17,7 +17,7 @@
   height: 25px;
   line-height: 25px;
   padding: 0 10px;
-  border-radius: 50rem;
+  border-radius: 50px;
   display: inline-block;
   color: white;
   font-size: 12px;
@@ -30,7 +30,7 @@
   color: white;
   background-color: #9b0909;
 }
-.discover .nvbar .ant-menu-item-selected::after,
-.discover .nvbar .ant-menu-submenu-selected::after {
+.discover :where(.css-dev-only-do-not-override-acm2ia).ant-menu-light.ant-menu-horizontal > .ant-menu-item::after,
+.discover :where(.css-dev-only-do-not-override-acm2ia).ant-menu-light.ant-menu-horizontal > .ant-menu-submenu::after {
   display: none;
 }

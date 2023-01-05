@@ -1,20 +1,27 @@
+//引入公共颜色样式
+@import '../../style/less/color.less';
 // 颜色
 //导航栏颜色
 @discover-bar-color: #c20c0c;
 //导航栏选中颜色
 @discover-bar-check-color: #9b0909;
 //导航栏文字颜色
-@discover-bar-font-color:white;
+@discover-bar-font-color: white;
 //导航栏选中文字颜色
 @discover-bar-check-font-color: white;
 
 // 长度
 // 导航栏高度
 @discover-bar-height: 35px;
+//导航栏选项尺寸
+@discover-bar-span-height: 25px;
+//导航栏内边距
+@discover-bar-span-padding: 0 10px;
 
 //发现音乐-导航栏
 .discover {
     background-color: @discover-bar-color;
+
     .nvbar {
         width: 800px;
         margin: 0 auto;
@@ -28,10 +35,10 @@
             padding: 0;
             width: 98px;
             span {
-                height: 25px;
-                line-height: 25px;
-                padding: 0 10px;
-                border-radius: 50rem;
+                height: @discover-bar-span-height;
+                line-height: @discover-bar-span-height;
+                padding: @discover-bar-span-padding;
+                border-radius: 50px;
                 display: inline-block;
                 color: @discover-bar-font-color;
                 font-size: 12px;
@@ -53,8 +60,10 @@
                 background-color: @discover-bar-check-color;
             }
         }
-        .ant-menu-item-selected::after, .ant-menu-submenu-selected::after{
-            display: none;
-          }
+
+    }
+    :where(.css-dev-only-do-not-override-acm2ia).ant-menu-light.ant-menu-horizontal>.ant-menu-item::after,
+    :where(.css-dev-only-do-not-override-acm2ia).ant-menu-light.ant-menu-horizontal>.ant-menu-submenu::after {
+        display: none;
     }
 }

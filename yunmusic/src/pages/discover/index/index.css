@@ -1,0 +1,82 @@
+.yBody {
+  background-color: #f5f5f5;
+}
+.yBody .download {
+  width: 253px;
+  height: 285px;
+  margin: 0 auto -285px;
+  right: -365px;
+  background-image: url('../../../style/img/download.png');
+  overflow: hidden;
+  position: relative;
+  z-index: 999;
+}
+.yBody .download p {
+  font-size: 12px;
+  margin: 255px auto 0;
+  text-align: center;
+  color: #8d8d8d;
+}
+.yBody .Banner .slick-dots-bottom {
+  width: 730px;
+  margin: 0 auto;
+  padding-right: 253px;
+}
+.yBody .Banner .slick-dots-bottom li {
+  width: 7px;
+  height: 7px;
+  background-color: #c8bac7;
+  border-radius: 100%;
+  margin: 8px;
+}
+.yBody .Banner .slick-dots-bottom li button {
+  width: 7px;
+  height: 7px;
+  border-radius: 100%;
+}
+.yBody .Banner .slick-dots-bottom li.slick-active {
+  width: 7px;
+  height: 7px;
+  margin-left: 8px;
+}
+.yBody .Banner .slick-dots-bottom li.slick-active button {
+  background-color: #c20c0c;
+}
+.yBody .Banner .ban-img {
+  width: 983px;
+  height: 285px;
+  margin: 0 auto;
+}
+.yBody .Banner .ban-img img {
+  width: 730px;
+  height: 285px;
+  vertical-align: top;
+  display: inline-block;
+}
+.yBody .yContent {
+  width: 983px;
+  height: 1730px;
+  background-color: black;
+  margin: 0 auto;
+  border-left: 1px #d3d3d3 solid;
+  border-right: 1px #d3d3d3 solid;
+}
+.yBody .yList {
+  display: inline-block;
+  width: 732px;
+  height: 1730px;
+  background-color: #ffffff;
+}
+.yBody .userList {
+  display: inline-block;
+  width: 250px;
+  height: 1730px;
+  border-left: 1px #d3d3d3 solid;
+  background-color: #f5f5f5;
+}
+@media screen and (max-width: 1000px) {
+  .yBody .download {
+    right: 0;
+    margin: 0 730px -285px;
+  }
+}

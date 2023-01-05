@@ -21,11 +21,17 @@ Header .nvbar .ant-menu-item-active span {
   color: white;
   background-color: black;
 }
+Header .nvbar .ant-menu-item-selected .sub {
+  width: 0px;
+  height: 0px;
+  margin: -14px auto 0;
+  border: 7px solid transparent;
+  border-bottom-color: #c20c0c;
+}
 Header .nvbar .ant-menu-item-selected span {
   color: white;
   background-color: black;
 }
-Header .nvbar .ant-menu-item-selected::after,
-Header .nvbar .ant-menu-submenu-selected::after {
+Header .ant-menu-item::after {
   display: none;
 }

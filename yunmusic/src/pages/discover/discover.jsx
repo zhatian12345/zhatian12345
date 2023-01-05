@@ -1,17 +1,15 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Link } from 'react-router-dom'
-import type { MenuProps } from 'antd';
 import { Menu } from 'antd';
 import './discover.css'
 import { useLocation } from "react-router-dom";
 
-
-const items: MenuProps['items'] = [
+const items  = [
     {
       label: (
         <Link to="/discover">推荐</Link>
       ),
-      key: '/discover',
+      key: '/',
     },
     {
       label: (
@@ -48,6 +46,9 @@ const Discover = () => {
     document.title = '网易云音乐'
     const location = useLocation();
     const [key, setKey] = useState(location.pathname)
+    if(key === '/discover'){
+      setKey('/')
+    }
     const hanleClick = (e) => {
         setKey(e.key)
     }

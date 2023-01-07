@@ -15,7 +15,7 @@
   font-size: 12px;
   margin: 255px auto 0;
   text-align: center;
-  color: #8d8d8d;
+  color: #666;
 }
 .yBody .Banner .ban-btn {
   width: 1100px;
@@ -89,8 +89,8 @@
   height: 1730px;
   background-color: black;
   margin: 0 auto;
-  border-left: 1px #d3d3d3 solid;
-  border-right: 1px #d3d3d3 solid;
+  border-left: 1px #666 solid;
+  border-right: 1px #666 solid;
 }
 .yBody .yList {
   display: inline-block;
@@ -106,6 +106,11 @@
   line-height: 35px;
   font-size: 20px;
   border-bottom: 3px #c20c0c solid;
+}
+.yBody .yList .list-title a.more {
+  font-size: 12px;
+  float: right;
+  color: #666;
 }
 .yBody .yList .list-title .icon-rementuijian {
   display: inline-block;
@@ -129,11 +134,15 @@
 .yBody .yList .list-title .discover-tab a:last-child {
   border: none;
 }
+.yBody .yList .list-title .discover-tab a:hover {
+  text-decoration: underline;
+  color: #333;
+}
 .yBody .yList .discover-list {
   width: 731px;
   margin-left: -42px;
 }
-.yBody .yList .discover-list li {
+.yBody .yList .catehot li {
   width: 140px;
   height: 180px;
   padding-left: 42px;
@@ -141,27 +150,83 @@
   display: inline-block;
   vertical-align: top;
 }
-.yBody .yList .discover-list li .list-cover {
+.yBody .yList .catehot li .list-cover {
   width: 140px;
   height: 140px;
 }
-.yBody .yList .discover-list li a {
+.yBody .yList .catehot li a {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  text-decoration: none;
   font-size: 14px;
   color: black;
   display: block;
   margin: 8px 0;
 }
-.yBody .yList .discover-list li a:hover {
+.yBody .yList .catehot li a:hover {
   text-decoration: underline;
   color: #333;
 }
-.yBody .userList {
+.yBody .yList .albumnews button {
+  width: 17px;
+  height: 164px;
+  line-height: 164px;
+  display: inline-block;
+  position: absolute;
+  z-index: 20;
+  border: none;
+  background-color: initial;
+}
+.yBody .yList .albumnews button.btn-left {
+  margin-left: 45px;
+}
+.yBody .yList .albumnews button.btn-right {
+  margin-left: -20px;
+}
+.yBody .yList .albumnews ul {
+  display: inline-block;
+  width: 650px;
+  height: 180px;
+  padding: 0 17px;
+  margin-left: 42px;
+  background-color: #f5f5f5;
+  border: 1px #d3d3d3 solid;
+}
+.yBody .yList .albumnews ul .ban-albumnews {
+  display: inline-block;
+  width: 650px;
+  height: 180px;
+  margin: 7px auto;
+  overflow: hidden;
+}
+.yBody .yList .albumnews ul .ban-albumnews li {
+  vertical-align: top;
+  display: inline-block;
+  margin-top: 18px;
+  margin-left: 11px;
+  width: 118px;
+  height: 150px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 12px;
+}
+.yBody .yList .albumnews ul .ban-albumnews li .ostback {
+  width: 118px;
+  height: 100px;
+  background-image: url('../../../style//img/coverall.png');
+  background-position: 0 -570px;
+  margin-top: -100px;
+}
+.yBody .yList .albumnews ul .ban-albumnews li img {
+  width: 100px;
+}
+.yBody .yList .albumnews ul .ban-albumnews li .artistName {
+  color: #666;
+}
+.userList {
   display: inline-block;
   width: 250px;
   height: 1730px;
-  border-left: 1px #d3d3d3 solid;
+  border-left: 1px #666 solid;
   background-color: #f5f5f5;
 }
 @media screen and (max-width: 1000px) {
@@ -171,7 +236,7 @@
   }
 }
 @media screen and (max-width: 1100px) {
-  .yBody .Banner {
-    margin: 0 -37px;
+  .yBody .Banner .ban-btn {
+    margin: -64px -37px;
   }
 }

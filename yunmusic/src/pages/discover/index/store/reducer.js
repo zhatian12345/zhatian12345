@@ -4,17 +4,15 @@ const defaultState = {
     banners: [],
     playlists:[],
     catehot:[],
-    searchlist:[],
     albumnews:[],
+    toplist:[],
+    playListMusic:[],
+    Artistlist:[]
 }
 
 export default (state = defaultState, action) => {
     const newState = JSON.parse(JSON.stringify(state))
     switch (action.type) {
-        // 搜索
-        case 'Search':
-            newState.searchlist = action.data
-            return newState;
         //轮播图
         case 'Banner':
             newState.banners = action.data
@@ -27,11 +25,21 @@ export default (state = defaultState, action) => {
         case 'Playlist':
             newState.playlists = action.data
             return newState;
+        //新碟上架
         case 'AlbumNews':
             newState.albumnews = action.data
             return newState;
-   
-        
+        //榜单
+        case 'Toplist':
+            newState.toplist = action.data
+            return newState;
+        //榜单音乐
+        case 'PlayListMusic':
+            newState.playListMusic.push(action.data)
+            return newState;   
+        case 'Artistlist':
+            newState.Artistlist=action.data
+            return newState;   
         default: return state;
     }
 }

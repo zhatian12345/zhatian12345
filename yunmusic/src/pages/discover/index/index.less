@@ -1,43 +1,18 @@
 //引入公共颜色样式
 @import '../../../style/css/style.less';
 //颜色
-//1.录播图
-//轮播图下方按钮颜色
-@ban-btnColor: #c8bac7;
+//1.轮播图
 //2.列表
 //用户列表背景颜色
-@index-userList-backgroundColor: #f5f5f5;
+@index-userList-backgroundColor: #fff;
 
 //尺寸
-//1.录播图
-// 轮播图图片长度
-@ban-imgWidth: 730px;
-@ban-imgHeight: 285px;
-//轮播图高度
-@ban-imgHeight: 285px;
-//轮播图前后切换按钮大小
-@ban-pnbtnWidth: 37px;
-@ban-pnbtnheight: 64px;
-//轮播图下方按钮大小
-@ban-btnWidth: 7px;
-@ban-btnheight: 7px;
-//下载客户端组件长度
-@ban-downloadWidth: 253px;
-//2.列表
 //列表长度
-@index-List-heigth: 1730px;
+@index-List-heigth: 1380px;
 //左侧内容列表
 @index-ylist-with: 732px;
 //左侧列表内容长度
-@index-List-connect-width:731px;
-//热门歌单列表元素尺寸
-@index-cate-hot-width:140px;
-@index-cate-hot-height:180px;
-//新碟上架列表尺寸
-@index-albumnews-width:650px;
-@index-albumnews-height:180px;
-//新碟上架列表元素尺寸
-@index-albumnews-li-width:100px;
+@index-List-connect-width: 731px;
 //右侧用户列表
 @index-userlist-with: 250px;
 
@@ -45,126 +20,13 @@
 .yBody {
     background-color: @back-color;
 
-    .download {
-        width: @ban-downloadWidth;
-        height: @ban-imgHeight;
-        margin: 0 auto -@ban-imgHeight;
-        right: -365px;
-        background-image: url('../../../style/img/download.png');
-        overflow: hidden;
-        position: relative;
-        z-index: 5;
-
-        p {
-            font-size: @connect-font-size;
-            margin: @ban-imgHeight - 30 auto 0;
-            text-align: center;
-            color: @border-color;
-        }
-    }
-
-    // 轮播图
-    .Banner {
-        // 轮播图前后切换按钮
-        .ban-btn {
-            width: 1100px;
-            height: @ban-pnbtnheight;
-            position: relative;
-            z-index: 10;
-            margin: -64px auto;
-            top: 110px;
-            overflow: hidden;
-
-            button.left,
-            button.right {
-                .iconfont {
-                    font-size: 35px;
-                }
-
-                color: #fff;
-                background-color: initial;
-                opacity: 1;
-                width: @ban-pnbtnWidth;
-                height: @ban-pnbtnheight;
-                border: none;
-            }
-
-            button:hover {
-                background-color: rgba(0, 0, 0, 0.5);
-
-            }
-
-            button.left {
-                float: left;
-            }
-
-            button.right {
-                float: right;
-            }
-        }
-
-        //录播图下方点
-        .slick-dots-bottom {
-            width: @ban-imgWidth;
-            margin: 0 auto;
-            padding-right: @ban-downloadWidth;
-
-            li {
-                button {
-                    width: @ban-btnWidth;
-                    height: @ban-btnheight;
-                    border-radius: 100%;
-                }
-
-                width: @ban-btnWidth;
-                height: @ban-btnheight;
-                background-color: @ban-btnColor;
-                border-radius: 100%;
-                margin: 8px;
-            }
-
-            li.slick-active {
-                width: @ban-btnWidth;
-                height: @ban-btnheight;
-                margin-left: 8px;
-
-                button {
-                    background-color: @main-color;
-                }
-
-            }
-        }
-
-        // 录播图背景
-        .ban-img {
-            width: @ban-imgWidth+@ban-downloadWidth;
-            height: @ban-imgHeight;
-            margin: 0 auto;
-
-            // 录播图图片
-            img {
-                display: inline-block;
-                width: @ban-imgWidth;
-                height: @ban-imgHeight;
-                vertical-align: top;
-                display: inline-block;
-                ;
-            }
-
-            // 下载客户端
-        }
-    }
-
     //主页内容
     .yContent {
-        width: @index-ylist-with + @index-userlist-with + 1px;
+        width: @index-ylist-with + @index-userlist-with + 10px;
         height: @index-List-heigth;
-        background-color: black;
+        padding-left: 7px;
         margin: 0 auto;
-        border-left: 1px @border-color solid;
-        border-right: 1px @border-color solid;
     }
-
     //左侧列表
     .yList {
         display: inline-block;
@@ -173,6 +35,8 @@
         background-color: #ffffff;
         overflow: hidden;
         padding: 20px;
+        border-left: 1px solid @border-color;
+        border-right: 1px solid @border-color;
         // 列表标题
         .list-title {
             height: 35px;
@@ -180,17 +44,27 @@
             line-height: 35px;
             font-size: @title-font-size;
             border-bottom: 3px @main-color solid;
+
             a.more {
                 font-size: @connect-font-size;
                 float: right;
-                color: @border-color;
+                color: @second-font-color;
+                .icon-youjiantou{
+                    margin-left: 5px;
+                    display: inline-block;
+                    font-size: @connect-font-size;
+                    color: @main-color;
+                }
             }
-            .icon-rementuijian {
+
+            .icon-double-circle-full {
                 display: inline-block;
-                font-size: 20px;
+                font-size: 15px;
                 color: @main-color;
-                margin-right: 5px;
+                margin-right: 10px;
+                height: 35px;
             }
+
             .discover-tab {
                 display: inline-block;
                 margin: 0 10px;
@@ -199,15 +73,17 @@
                     border-right: 1px @border-color solid;
                     height: 12px;
                     line-height: 12px;
-                    color: @border-color;
+                    color: @second-font-color;
                     font-size: @connect-font-size;
                     display: inline-block;
                     padding: 0 10px;
-                    
+
                 }
+
                 a:last-child {
                     border: none;
                 }
+
                 a:hover {
                     text-decoration: underline;
                     color: #333;
@@ -220,98 +96,6 @@
             width: @index-List-connect-width;
             margin-left: -42px;
         }
-        .catehot {
-            // 热门歌单
-            li {
-                width: @index-cate-hot-width;
-                height: @index-cate-hot-height;
-                padding-left: 42px;
-                padding-bottom: 30px;
-                display: inline-block;
-                vertical-align: top;
-
-                .list-cover {
-                    width: @index-cate-hot-width;
-                    height: @index-cate-hot-width;
-                }
-                //热门歌单分类
-                a {
-                    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-                    font-size: 14px;
-                    color: black;
-                    display: block;
-                    margin: 8px 0;
-                }
-
-                a:hover {
-                    text-decoration: underline;
-                    color: #333;
-                }
-            }
-
-        }
-        //新碟上架
-        .albumnews {
-            button {
-                width: 17px;
-                height: 164px;
-                line-height: 164px;
-                display: inline-block;
-                position: absolute;
-                z-index: 20;
-                border: none;
-                background-color: initial;
-            }
-            button.btn-left{
-                margin-left: 45px;
-            }
-            button.btn-right{
-                margin-left: -20px;
-            }
-            ul {
-                display: inline-block;
-                width: @index-albumnews-width;
-                height: @index-albumnews-height;
-                padding: 0 17px;
-                margin-left: 42px;
-                background-color: #f5f5f5;
-                border: 1px #d3d3d3 solid;
-                .ban-albumnews {
-                    display: inline-block;
-                    width: @index-albumnews-width;
-                    height: @index-albumnews-height;
-                    margin: 7px auto;
-                    overflow: hidden;
-                    li {
-                        vertical-align: top;
-                        display: inline-block;
-                        margin-top: 18px;
-                        margin-left: 11px;
-                        width: 118px;
-                        height: 150px;
-                        overflow: hidden;
-                        white-space: nowrap;
-                        text-overflow: ellipsis;
-                        font-size: @connect-font-size;
-                        .ostback{
-                            width: @index-albumnews-li-width + 18px;
-                            height: @index-albumnews-li-width;
-                            background-image: url('../../../style//img/coverall.png');
-                            background-position: 0 -570px;
-                            margin-top: -@index-albumnews-li-width;
-                        }
-                        img{
-                            width: @index-albumnews-li-width;
-                        }
-                        .artistName{
-                            color: @border-color;
-                        }
-                    }
-                }
-
-            }
-
-        }
     }
 }
 
@@ -319,27 +103,9 @@
     display: inline-block;
     width: @index-userlist-with;
     height: @index-List-heigth;
-    border-left: 1px @border-color solid;
+    border-right: 1px @border-color solid;
     background-color: @index-userList-backgroundColor;
+    overflow: hidden;
 }
 
 //样式调整
-@media screen and (max-width:1000px) {
-    .yBody {
-        .download {
-            right: 0;
-            margin: 0 @ban-imgWidth -@ban-imgHeight;
-        }
-    }
-}
-
-@media screen and (max-width:1100px) {
-    .yBody {
-        .Banner {
-            .ban-btn {
-                margin: -64px -37px;
-            }
-
-        }
-    }
-}

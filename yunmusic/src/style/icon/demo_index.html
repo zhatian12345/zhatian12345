@@ -47,10 +47,42 @@
         <li class="dib"><span>Symbol</span></li>
       </ul>
       
+      <a href="https://www.iconfont.cn/manage/index?manage_type=myprojects&projectId=3853465" target="_blank" class="nav-more">查看项目</a>
+      
     </div>
     <div class="tab-container">
       <div class="content unicode" style="display: block;">
           <ul class="icon_lists dib-box">
+          
+            <li class="dib">
+              <span class="icon iconfont">&#xe64f;</span>
+                <div class="name">添加</div>
+                <div class="code-name">&amp;#xe64f;</div>
+              </li>
+          
+            <li class="dib">
+              <span class="icon iconfont">&#xe624;</span>
+                <div class="name">播放</div>
+                <div class="code-name">&amp;#xe624;</div>
+              </li>
+          
+            <li class="dib">
+              <span class="icon iconfont">&#xe60c;</span>
+                <div class="name">收藏</div>
+                <div class="code-name">&amp;#xe60c;</div>
+              </li>
+          
+            <li class="dib">
+              <span class="icon iconfont">&#xea6c;</span>
+                <div class="name">圆点</div>
+                <div class="code-name">&amp;#xea6c;</div>
+              </li>
+          
+            <li class="dib">
+              <span class="icon iconfont">&#xee39;</span>
+                <div class="name">右箭头</div>
+                <div class="code-name">&amp;#xee39;</div>
+              </li>
           
             <li class="dib">
               <span class="icon iconfont">&#xe775;</span>
@@ -62,12 +94,6 @@
               <span class="icon iconfont">&#xe779;</span>
                 <div class="name">向左1</div>
                 <div class="code-name">&amp;#xe779;</div>
-              </li>
-          
-            <li class="dib">
-              <span class="icon iconfont">&#xe73d;</span>
-                <div class="name">热门推荐</div>
-                <div class="code-name">&amp;#xe73d;</div>
               </li>
           
           </ul>
@@ -88,7 +114,9 @@
 <pre><code class="language-css"
 >@font-face {
   font-family: 'iconfont';
-  src: url('iconfont.ttf?t=1673006107782') format('truetype');
+  src: url('iconfont.woff2?t=1673328659162') format('woff2'),
+       url('iconfont.woff?t=1673328659162') format('woff'),
+       url('iconfont.ttf?t=1673328659162') format('truetype');
 }
 </code></pre>
           <h3 id="-iconfont-">第二步：定义使用 iconfont 的样式</h3>
@@ -115,6 +143,51 @@
         <ul class="icon_lists dib-box">
           
           <li class="dib">
+            <span class="icon iconfont icon-tianjia"></span>
+            <div class="name">
+              添加
+            </div>
+            <div class="code-name">.icon-tianjia
+            </div>
+          </li>
+          
+          <li class="dib">
+            <span class="icon iconfont icon-bofang1"></span>
+            <div class="name">
+              播放
+            </div>
+            <div class="code-name">.icon-bofang1
+            </div>
+          </li>
+          
+          <li class="dib">
+            <span class="icon iconfont icon-shoucang"></span>
+            <div class="name">
+              收藏
+            </div>
+            <div class="code-name">.icon-shoucang
+            </div>
+          </li>
+          
+          <li class="dib">
+            <span class="icon iconfont icon-double-circle-full"></span>
+            <div class="name">
+              圆点
+            </div>
+            <div class="code-name">.icon-double-circle-full
+            </div>
+          </li>
+          
+          <li class="dib">
+            <span class="icon iconfont icon-youjiantou"></span>
+            <div class="name">
+              右箭头
+            </div>
+            <div class="code-name">.icon-youjiantou
+            </div>
+          </li>
+          
+          <li class="dib">
             <span class="icon iconfont icon-xiangyou1"></span>
             <div class="name">
               向右1
@@ -129,15 +202,6 @@
               向左1
             </div>
             <div class="code-name">.icon-xiangzuo1
-            </div>
-          </li>
-          
-          <li class="dib">
-            <span class="icon iconfont icon-rementuijian"></span>
-            <div class="name">
-              热门推荐
-            </div>
-            <div class="code-name">.icon-rementuijian
             </div>
           </li>
           
@@ -170,6 +234,46 @@
           
             <li class="dib">
                 <svg class="icon svg-icon" aria-hidden="true">
+                  <use xlink:href="#icon-tianjia"></use>
+                </svg>
+                <div class="name">添加</div>
+                <div class="code-name">#icon-tianjia</div>
+            </li>
+          
+            <li class="dib">
+                <svg class="icon svg-icon" aria-hidden="true">
+                  <use xlink:href="#icon-bofang1"></use>
+                </svg>
+                <div class="name">播放</div>
+                <div class="code-name">#icon-bofang1</div>
+            </li>
+          
+            <li class="dib">
+                <svg class="icon svg-icon" aria-hidden="true">
+                  <use xlink:href="#icon-shoucang"></use>
+                </svg>
+                <div class="name">收藏</div>
+                <div class="code-name">#icon-shoucang</div>
+            </li>
+          
+            <li class="dib">
+                <svg class="icon svg-icon" aria-hidden="true">
+                  <use xlink:href="#icon-double-circle-full"></use>
+                </svg>
+                <div class="name">圆点</div>
+                <div class="code-name">#icon-double-circle-full</div>
+            </li>
+          
+            <li class="dib">
+                <svg class="icon svg-icon" aria-hidden="true">
+                  <use xlink:href="#icon-youjiantou"></use>
+                </svg>
+                <div class="name">右箭头</div>
+                <div class="code-name">#icon-youjiantou</div>
+            </li>
+          
+            <li class="dib">
+                <svg class="icon svg-icon" aria-hidden="true">
                   <use xlink:href="#icon-xiangyou1"></use>
                 </svg>
                 <div class="name">向右1</div>
@@ -182,14 +286,6 @@
                 </svg>
                 <div class="name">向左1</div>
                 <div class="code-name">#icon-xiangzuo1</div>
-            </li>
-          
-            <li class="dib">
-                <svg class="icon svg-icon" aria-hidden="true">
-                  <use xlink:href="#icon-rementuijian"></use>
-                </svg>
-                <div class="name">热门推荐</div>
-                <div class="code-name">#icon-rementuijian</div>
             </li>
           
           </ul>

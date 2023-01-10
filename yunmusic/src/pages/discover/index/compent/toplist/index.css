@@ -1,0 +1,98 @@
+.TopList .toplist .top-flag {
+  margin-left: 43px;
+  width: 1000px;
+}
+.TopList .toplist .top-flag dl {
+  display: inline-block;
+  vertical-align: top;
+  width: 228px;
+  background-color: #f4f4f4;
+  border: 1px solid #d3d3d3;
+  margin-left: -1px;
+  font-size: 12px;
+}
+.TopList .toplist .top-flag dl dt {
+  padding-top: 20px;
+  padding-left: 19px;
+  padding-bottom: 20px;
+}
+.TopList .toplist .top-flag dl dt .occlusion {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  margin-bottom: -80px;
+  background: url('../../../../../style/img/coverall.png') no-repeat;
+  background-position: -145px -57px;
+}
+.TopList .toplist .top-flag dl dt img {
+  width: 80px;
+  height: 80px;
+}
+.TopList .toplist .top-flag dl dt .tit {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 6px;
+  margin-left: 10px;
+}
+.TopList .toplist .top-flag dl dt .tit .btn {
+  margin-top: 10px;
+}
+.TopList .toplist .top-flag dl dt .tit .btn div {
+  display: inline-block;
+  margin-right: 5px;
+  font-size: 28px;
+  color: #c1c1c1;
+}
+.TopList .toplist .top-flag dl dt .tit .btn div:hover {
+  color: #9b9b9b;
+}
+.TopList .toplist .top-flag dl dd {
+  height: 32px;
+  line-height: 32px;
+  background-color: #f4f4f4;
+}
+.TopList .toplist .top-flag dl dd span {
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  width: 36px;
+  margin-left: 15px;
+  font-size: 16px;
+}
+.TopList .toplist .top-flag dl dd a {
+  display: inline-block;
+  vertical-align: top;
+  color: black;
+}
+.TopList .toplist .top-flag dl dd .btn {
+  display: none;
+  padding-right: 5px;
+  height: 60px;
+}
+.TopList .toplist .top-flag dl dd .btn div {
+  color: #797979;
+  display: inline-block;
+  margin-right: 5px;
+}
+.TopList .toplist .top-flag dl dd:hover a {
+  width: 100px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.TopList .toplist .top-flag dl dd:hover .btn {
+  display: inline-block;
+}
+.TopList .toplist .top-flag dl dd:hover .btn div:hover {
+  color: #666666;
+}
+.TopList .toplist .top-flag dl dd:nth-child(-n+4) span:nth-of-type(1) {
+  color: #c20c0c;
+}
+.TopList .toplist .top-flag dl dd:nth-of-type(odd) {
+  background-color: #e8e8e8;
+}
+.TopList .toplist .top-flag dl dd.lookall {
+  text-align: right;
+  padding-right: 20px;
+}

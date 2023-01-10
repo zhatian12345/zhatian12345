@@ -1,0 +1,86 @@
+@import '../../../../../style/css/style.less';
+
+.user {
+    .login {
+        width: 100%;
+        height: 125px;
+        background: url('../../../../../style/img/index.png') no-repeat;
+
+        p {
+            width: 205px;
+            height: 45px;
+            margin: 0 auto;
+            padding: 16px 0;
+            font-size: @connect-font-size;
+            color: @second-font-color;
+        }
+
+        button {
+            display: block;
+            margin: 0 auto;
+            width: 100px;
+            height: 31px;
+            border: none;
+            background: url('../../../../../style/img/index.png') no-repeat 0px -195px;
+            font-size: @connect-font-size;
+            color: #fff;
+        }
+
+        button:hover {
+            background-position: -110px -195px;
+        }
+    }
+
+    .userlist {
+        width: 210px;
+        margin: 15px auto;
+
+        .title {
+            display: block;
+            font-size: @connect-font-size;
+            border-bottom: 1px solid @border-color;
+            height: 21px;
+            margin-bottom: 15px;
+
+            a {
+                color: @second-font-color;
+                font-weight: 100;
+                float: right;
+            }
+        }
+    }
+
+    .artist {
+        li {
+            width: 210px;
+            height: 62px;
+            border: 1px solid @border-color;
+            margin-top: 14px;
+            background-color: #fafafa;
+            a {
+                height: 62px;
+                img{
+                    height: 62px;
+                    float: left;
+                    display: inline-block;
+                    vertical-align: top;
+                    margin-right: 14px;
+                }
+                h4{
+                    font-size: 14px;
+                    color: #000;
+                    margin-top: 14px;
+                }
+                p{
+                    font-size: @connect-font-size;
+                    color: @second-font-color;
+                    margin-top: 8px;
+
+                }
+            }
+        }
+    }
+    li:hover{
+        background-color: #f4f4f4;
+    }
+}

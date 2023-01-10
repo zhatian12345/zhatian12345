@@ -1,0 +1,132 @@
+//引入公共颜色样式
+@import '../../../../../style/css/style.less';
+
+//颜色
+//列表背景颜色
+@index-toplix-background: #f4f4f4;
+
+//榜单
+.TopList {
+    .toplist {
+        .top-flag {
+            margin-left: 43px;
+            width: 1000px;
+            dl {
+                display: inline-block;
+                vertical-align: top;
+                width: 228px;
+                background-color: @index-toplix-background;
+                border: 1px solid @border-color;
+                margin-left: -1px;
+                font-size: @connect-font-size;
+                dt {
+                    padding-top: 20px;
+                    padding-left: 19px;
+                    padding-bottom: 20px;
+
+                    .occlusion {
+                        position: relative;
+                        width: 80px;
+                        height: 80px;
+                        margin-bottom: -80px;
+                        background: url('../../../../../style/img/coverall.png') no-repeat;
+                        background-position: -145px -57px;
+
+                    }
+
+                    img {
+                        width: 80px;
+                        height: 80px;
+                    }
+
+                    .tit {
+                        display: inline-block;
+                        vertical-align: top;
+                        margin-top: 6px;
+                        margin-left: 10px;
+
+                        .btn {
+                            margin-top: 10px;
+
+                            div {
+                                display: inline-block;
+                                margin-right: 5px;
+                                font-size: 28px;
+                                color: #c1c1c1;
+                            }
+
+                            div:hover {
+                                color: #9b9b9b;
+                            }
+                        }
+                    }
+                }
+
+                dd {
+                    height: 32px;
+                    line-height: 32px;
+                    background-color: #f4f4f4;
+                }
+
+                dd {
+                    span {
+                        display: inline-block;
+                        vertical-align: top;
+                        text-align: center;
+                        width: 36px;
+                        margin-left: 15px;
+                        font-size: 16px;
+                    }
+
+                    a {
+                        display: inline-block;
+                        vertical-align: top;
+                        color: black;
+                    }
+
+                    .btn {
+                        display: none;
+                        padding-right: 5px;
+                        height: 60px;
+                        div{
+                            color: #797979;
+                            display: inline-block;
+                            margin-right: 5px;    
+                        }
+                    }
+
+                    
+                }
+                dd:hover{
+                    a{
+                        width: 100px;
+                        overflow: hidden;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                    }
+                    .btn{
+                        display: inline-block;
+                        div:hover{
+                            color: #666666;
+                        }
+                    }
+                }
+
+                dd:nth-child(-n+4) {
+                    span:nth-of-type(1) {
+                        color: @main-color;
+                    }
+                }
+
+                dd:nth-of-type(odd) {
+                    background-color: #e8e8e8;
+                }
+
+                dd.lookall {
+                    text-align: right;
+                    padding-right: 20px;
+                }
+            }
+        }
+    }
+}

@@ -1,104 +1,21 @@
 .yBody {
   background-color: #f5f5f5;
 }
-.yBody .download {
-  width: 253px;
-  height: 285px;
-  margin: 0 auto -285px;
-  right: -365px;
-  background-image: url('../../../style/img/download.png');
-  overflow: hidden;
-  position: relative;
-  z-index: 5;
-}
-.yBody .download p {
-  font-size: 12px;
-  margin: 255px auto 0;
-  text-align: center;
-  color: #666;
-}
-.yBody .Banner .ban-btn {
-  width: 1100px;
-  height: 64px;
-  position: relative;
-  z-index: 10;
-  margin: -64px auto;
-  top: 110px;
-  overflow: hidden;
-}
-.yBody .Banner .ban-btn button.left,
-.yBody .Banner .ban-btn button.right {
-  color: #fff;
-  background-color: initial;
-  opacity: 1;
-  width: 37px;
-  height: 64px;
-  border: none;
-}
-.yBody .Banner .ban-btn button.left .iconfont,
-.yBody .Banner .ban-btn button.right .iconfont {
-  font-size: 35px;
-}
-.yBody .Banner .ban-btn button:hover {
-  background-color: rgba(0, 0, 0, 0.5);
-}
-.yBody .Banner .ban-btn button.left {
-  float: left;
-}
-.yBody .Banner .ban-btn button.right {
-  float: right;
-}
-.yBody .Banner .slick-dots-bottom {
-  width: 730px;
-  margin: 0 auto;
-  padding-right: 253px;
-}
-.yBody .Banner .slick-dots-bottom li {
-  width: 7px;
-  height: 7px;
-  background-color: #c8bac7;
-  border-radius: 100%;
-  margin: 8px;
-}
-.yBody .Banner .slick-dots-bottom li button {
-  width: 7px;
-  height: 7px;
-  border-radius: 100%;
-}
-.yBody .Banner .slick-dots-bottom li.slick-active {
-  width: 7px;
-  height: 7px;
-  margin-left: 8px;
-}
-.yBody .Banner .slick-dots-bottom li.slick-active button {
-  background-color: #c20c0c;
-}
-.yBody .Banner .ban-img {
-  width: 983px;
-  height: 285px;
-  margin: 0 auto;
-}
-.yBody .Banner .ban-img img {
-  width: 730px;
-  height: 285px;
-  vertical-align: top;
-  display: inline-block;
-}
 .yBody .yContent {
-  width: 983px;
-  height: 1730px;
-  background-color: black;
+  width: 992px;
+  height: 1380px;
+  padding-left: 7px;
   margin: 0 auto;
-  border-left: 1px #666 solid;
-  border-right: 1px #666 solid;
 }
 .yBody .yList {
   display: inline-block;
   width: 692px;
-  height: 1690px;
+  height: 1340px;
   background-color: #ffffff;
   overflow: hidden;
   padding: 20px;
+  border-left: 1px solid #d3d3d3;
+  border-right: 1px solid #d3d3d3;
 }
 .yBody .yList .list-title {
   height: 35px;
@@ -112,18 +29,25 @@
   float: right;
   color: #666;
 }
-.yBody .yList .list-title .icon-rementuijian {
+.yBody .yList .list-title a.more .icon-youjiantou {
+  margin-left: 5px;
   display: inline-block;
-  font-size: 20px;
+  font-size: 12px;
   color: #c20c0c;
-  margin-right: 5px;
+}
+.yBody .yList .list-title .icon-double-circle-full {
+  display: inline-block;
+  font-size: 15px;
+  color: #c20c0c;
+  margin-right: 10px;
+  height: 35px;
 }
 .yBody .yList .list-title .discover-tab {
   display: inline-block;
   margin: 0 10px;
 }
 .yBody .yList .list-title .discover-tab a {
-  border-right: 1px #666 solid;
+  border-right: 1px #d3d3d3 solid;
   height: 12px;
   line-height: 12px;
   color: #666;
@@ -142,101 +66,11 @@
   width: 731px;
   margin-left: -42px;
 }
-.yBody .yList .catehot li {
-  width: 140px;
-  height: 180px;
-  padding-left: 42px;
-  padding-bottom: 30px;
-  display: inline-block;
-  vertical-align: top;
-}
-.yBody .yList .catehot li .list-cover {
-  width: 140px;
-  height: 140px;
-}
-.yBody .yList .catehot li a {
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 14px;
-  color: black;
-  display: block;
-  margin: 8px 0;
-}
-.yBody .yList .catehot li a:hover {
-  text-decoration: underline;
-  color: #333;
-}
-.yBody .yList .albumnews button {
-  width: 17px;
-  height: 164px;
-  line-height: 164px;
-  display: inline-block;
-  position: absolute;
-  z-index: 20;
-  border: none;
-  background-color: initial;
-}
-.yBody .yList .albumnews button.btn-left {
-  margin-left: 45px;
-}
-.yBody .yList .albumnews button.btn-right {
-  margin-left: -20px;
-}
-.yBody .yList .albumnews ul {
-  display: inline-block;
-  width: 650px;
-  height: 180px;
-  padding: 0 17px;
-  margin-left: 42px;
-  background-color: #f5f5f5;
-  border: 1px #d3d3d3 solid;
-}
-.yBody .yList .albumnews ul .ban-albumnews {
-  display: inline-block;
-  width: 650px;
-  height: 180px;
-  margin: 7px auto;
-  overflow: hidden;
-}
-.yBody .yList .albumnews ul .ban-albumnews li {
-  vertical-align: top;
-  display: inline-block;
-  margin-top: 18px;
-  margin-left: 11px;
-  width: 118px;
-  height: 150px;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  font-size: 12px;
-}
-.yBody .yList .albumnews ul .ban-albumnews li .ostback {
-  width: 118px;
-  height: 100px;
-  background-image: url('../../../style//img/coverall.png');
-  background-position: 0 -570px;
-  margin-top: -100px;
-}
-.yBody .yList .albumnews ul .ban-albumnews li img {
-  width: 100px;
-}
-.yBody .yList .albumnews ul .ban-albumnews li .artistName {
-  color: #666;
-}
 .userList {
   display: inline-block;
   width: 250px;
-  height: 1730px;
-  border-left: 1px #666 solid;
-  background-color: #f5f5f5;
-}
-@media screen and (max-width: 1000px) {
-  .yBody .download {
-    right: 0;
-    margin: 0 730px -285px;
-  }
-}
-@media screen and (max-width: 1100px) {
-  .yBody .Banner .ban-btn {
-    margin: -64px -37px;
-  }
+  height: 1380px;
+  border-right: 1px #d3d3d3 solid;
+  background-color: #fff;
+  overflow: hidden;
 }

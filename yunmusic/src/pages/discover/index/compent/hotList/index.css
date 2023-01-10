@@ -1,0 +1,23 @@
+.HotList .catehot li {
+  width: 140px;
+  height: 180px;
+  padding-left: 42px;
+  padding-bottom: 30px;
+  display: inline-block;
+  vertical-align: top;
+}
+.HotList .catehot li .list-cover {
+  width: 140px;
+  height: 140px;
+}
+.HotList .catehot li a {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 14px;
+  color: black;
+  display: block;
+  margin: 8px 0;
+}
+.HotList .catehot li a:hover {
+  text-decoration: underline;
+  color: #333;
+}

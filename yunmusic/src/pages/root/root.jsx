@@ -13,7 +13,7 @@ const items: MenuProps['items'] = [
   {
     label: (
       <div className="class">
-        <Link to="/">发现音乐</Link>
+        <a href="/">发现音乐</a>
         <div className="sub"></div>
       </div>
     ),

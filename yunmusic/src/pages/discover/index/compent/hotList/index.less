@@ -1,0 +1,40 @@
+//引入公共颜色样式
+@import '../../../../../style/css/style.less';
+//热门歌单列表元素尺寸
+@index-cate-hot-width: 140px;
+@index-cate-hot-height: 180px;
+
+.HotList {
+    .catehot {
+
+        // 热门歌单
+        li {
+            width: @index-cate-hot-width;
+            height: @index-cate-hot-height;
+            padding-left: 42px;
+            padding-bottom: 30px;
+            display: inline-block;
+            vertical-align: top;
+
+            .list-cover {
+                width: @index-cate-hot-width;
+                height: @index-cate-hot-width;
+            }
+
+            //热门歌单分类
+            a {
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 14px;
+                color: black;
+                display: block;
+                margin: 8px 0;
+            }
+
+            a:hover {
+                text-decoration: underline;
+                color: #333;
+            }
+        }
+
+    }
+}

@@ -1,0 +1,153 @@
+//引入公共颜色样式
+@import '../../../../../style/css/style.less';
+//颜色
+//1.轮播图
+//轮播图下方按钮颜色
+@ban-btnColor: #c8bac7;
+//尺寸
+//1.轮播图
+// 轮播图图片长度
+@ban-imgWidth: 730px;
+@ban-imgHeight: 285px;
+//轮播图高度
+@ban-imgHeight: 285px;
+//轮播图前后切换按钮大小
+@ban-pnbtnWidth: 37px;
+@ban-pnbtnheight: 64px;
+//轮播图下方按钮大小
+@ban-btnWidth: 7px;
+@ban-btnheight: 7px;
+//下载客户端组件长度
+@ban-downloadWidth: 253px;
+
+.download {
+    width: @ban-downloadWidth;
+    height: @ban-imgHeight;
+    margin: 0 auto -@ban-imgHeight;
+    right: -365px;
+    background-image: url('../../../../../style/img/download.png');
+    overflow: hidden;
+    position: relative;
+    z-index: 5;
+
+    p {
+        font-size: @connect-font-size;
+        margin: @ban-imgHeight - 30 auto 0;
+        text-align: center;
+        color: @second-font-color;
+    }
+}
+
+// 轮播图
+.TopBanner{
+    .Banner {
+        // 轮播图前后切换按钮
+        .ban-btn {
+            width: 1100px;
+            height: @ban-pnbtnheight;
+            position: relative;
+            z-index: 10;
+            margin: -64px auto;
+            top: 110px;
+            overflow: hidden;
+    
+            button.left,
+            button.right {
+                .iconfont {
+                    font-size: 35px;
+                }
+    
+                color: #fff;
+                background-color: initial;
+                opacity: 1;
+                width: @ban-pnbtnWidth;
+                height: @ban-pnbtnheight;
+                border: none;
+            }
+    
+            button:hover {
+                background-color: rgba(0, 0, 0, 0.5);
+    
+            }
+    
+            button.left {
+                float: left;
+            }
+    
+            button.right {
+                float: right;
+            }
+        }
+    
+        //录播图下方点
+        .slick-dots-bottom {
+            width: @ban-imgWidth;
+            margin: 0 auto;
+            padding-right: @ban-downloadWidth;
+    
+            li {
+                button {
+                    width: @ban-btnWidth;
+                    height: @ban-btnheight;
+                    border-radius: 100%;
+                }
+    
+                width: @ban-btnWidth;
+                height: @ban-btnheight;
+                background-color: @ban-btnColor;
+                border-radius: 100%;
+                margin: 8px;
+            }
+    
+            li.slick-active {
+                width: @ban-btnWidth;
+                height: @ban-btnheight;
+                margin-left: 8px;
+    
+                button {
+                    background-color: @main-color;
+                }
+    
+            }
+        }
+    
+        // 录播图背景
+        .ban-img {
+            width: @ban-imgWidth+@ban-downloadWidth;
+            height: @ban-imgHeight;
+            margin: 0 auto;
+    
+            // 录播图图片
+            img {
+                display: inline-block;
+                width: @ban-imgWidth;
+                height: @ban-imgHeight;
+                vertical-align: top;
+                display: inline-block;
+                ;
+            }
+    
+            // 下载客户端
+        }
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .TopBanner {
+        .download {
+            right: 0;
+            margin: 0 @ban-imgWidth -@ban-imgHeight;
+        }
+    }
+}
+
+@media screen and (max-width:1100px) {
+    .TopBanner {
+        .Banner {
+            .ban-btn {
+                margin: -64px -37px;
+            }
+
+        }
+    }
+}

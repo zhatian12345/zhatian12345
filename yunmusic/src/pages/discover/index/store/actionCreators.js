@@ -1,11 +1,3 @@
-//搜索
-export const Search = (data) => {
-    return {
-        type: 'Search',
-        data
-    }
-
-}
 //轮播图
 export const Banners = (data) => {
     return {
@@ -29,10 +21,34 @@ export const Playlist = (data) => {
     }
 
 }
-//歌单
+//新碟上架
 export const AlbumNews = (data) => {
     return {
         type: 'AlbumNews',
+        data
+    }
+
+}
+//榜单
+export const Toplist = (data) => {
+    return {
+        type: 'Toplist',
+        data
+    }
+
+}
+//歌单音乐
+export const PlayListMusic = (data) => {
+    return {
+        type: 'PlayListMusic',
+        data
+    }
+
+}
+//入驻歌手
+export const Artistlist = (data) => {
+    return {
+        type: 'Artistlist',
         data
     }
 

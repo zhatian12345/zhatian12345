@@ -1,0 +1,28 @@
+.PlayListIfo {
+  width: 960px;
+  overflow: hidden;
+}
+.PlayListIfo ul {
+  margin-left: -45px;
+  margin-top: 35px;
+}
+.PlayListIfo ul li {
+  display: inline-block;
+  width: 140px;
+  font-size: 12px;
+  padding-left: 50px;
+  padding-bottom: 30px;
+  vertical-align: top;
+}
+.PlayListIfo ul li .msk {
+  display: block;
+  position: absolute;
+  width: 140px;
+  height: 140px;
+  background: url('../../../../../style/img/coverall.png') no-repeat;
+  margin-bottom: -140px;
+}
+.PlayListIfo ul li img {
+  width: 140px;
+  height: 140px;
+}

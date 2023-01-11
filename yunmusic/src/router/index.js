@@ -3,6 +3,7 @@ import ROOT from "../pages/root/root.jsx"
 import DiscoverBar from "../pages/discover/discover";
 import Discover from "../pages/discover/index/index";
 import Toplist from "../pages/discover/toplist/toplist";
+import PlayList from "../pages/discover/playlist/index";
 
 function ROUTER() {
     return (
@@ -19,6 +20,7 @@ function ROUTER() {
                     <Route exact path="/" component={Discover} />
                     <Route exact path="/discover" component={Discover} />
                     <Route path="/discover/toplist" component={Toplist} />
+                    <Route path="/discover/playlist" component={PlayList} />
                 </Switch>
             </div>
         </Router>

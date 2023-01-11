@@ -18,13 +18,15 @@
   width: 1100px;
   height: 64px;
   position: relative;
-  z-index: 10;
+  z-index: 20;
   margin: -64px auto;
   top: 110px;
   overflow: hidden;
 }
 .TopBanner .Banner .ban-btn button.left,
 .TopBanner .Banner .ban-btn button.right {
+  position: relative;
+  z-index: 999;
   color: #fff;
   background-color: initial;
   opacity: 1;

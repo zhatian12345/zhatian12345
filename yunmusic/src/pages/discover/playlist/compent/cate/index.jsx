@@ -26,18 +26,18 @@ const PlayListCate = () => {
     }
     //歌单标题名称
     let location = useLocation().search.split('?')[1];
-    let path = decodeURIComponent(location)
     if(location===undefined) {
-        path = 'cat=全部'
+        location = 'cat=全部'
     }
-    else if(location.indexOf('cat')==-1) {
-        path = 'cat=全部&order=hot'
+    else if (location.indexOf('cat') === -1) {
+        location = location+'&cat=全部'
     }
-    const urlres= path.replace(/&/g, '","').replace(/=/g, '":"');
-	const reqDataString = '{"' + urlres + '"}';
+    const urlres= location.replace(/&/g, '","').replace(/=/g, '":"');
+	const reqDataString = '{"' + decodeURIComponent(urlres) + '"}';
 	const query = JSON.parse(reqDataString);
     let cat = query.cat
     let order = query.order
+    console.log(query);
     //歌单选择窗口显示
     const [isshow,setisshow] = useState(false)
     const checkshow = ()=>{
@@ -67,9 +67,12 @@ const PlayListCate = () => {
                                 <dd>
                                     {
                                         item.arr.map((itm, inx) => {
+                                            let dom = ''
+                                            dom=itm.name.replace("/","%2F")
+                                            dom=dom.replace("&","%26")
                                             return (
                                                 <div key={inx}>
-                                                    <a href={`/#/discover/playlist?cat=${itm.name}${order=='hot'?'&order=hot':''}`}>{itm.name}</a>
+                                                    <a className={cat===item.name?'checked':''} href={`/#/discover/playlist?cat=${dom}${order=='hot'?'&order=hot':''}`}>{itm.name}</a>
                                                     <span>|</span>
                                                 </div>
                                             )

@@ -1,19 +1,22 @@
 @import '../../../../../style/css/style.less';
 
-.PlayListIfo{
+.PlayListIfo {
     width: 960px;
     overflow: hidden;
-    ul{
-        margin-left: -45px;
+
+    ul.list {
+        margin-left: -50px;
         margin-top: 35px;
-        li{
+
+        li {
             display: inline-block;
             width: 140px;
             font-size: @connect-font-size;
             padding-left: 50px;
             padding-bottom: 30px;
             vertical-align: top;
-            .msk{
+
+            .msk {
                 display: block;
                 position: absolute;
                 width: 140px;
@@ -21,10 +24,50 @@
                 background: url('../../../../../style/img/coverall.png') no-repeat;
                 margin-bottom: -140px;
             }
-            img{
+
+            img {
                 width: 140px;
                 height: 140px;
             }
+        }
+    }
+
+    //分页
+    .pages {
+        width: 900px;
+        text-align: center;
+
+        li {
+            vertical-align: top;
+            padding: 0;
+            min: width 22px;
+            width: 25px;
+            height: 25px;
+            line-height: 25px;
+            text-align: center;
+            border: 1px solid @border-color;
+            border-radius: 0;
+            font-size: 12px;
+        }
+
+        .ant-pagination-prev,
+        .ant-pagination-next {
+            width: 70px;
+            a {
+                color: #000;
+            }
+        }
+
+        .ant-pagination-item-active {
+            background-color: @main-color;
+
+            a {
+                color: #fff;
+            }
+        }
+
+        .ant-pagination-item-active:hover {
+            border-color: @border-color;
         }
     }
 }

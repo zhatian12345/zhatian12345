@@ -8,7 +8,7 @@ import Under from '../../under/index'
 const PlayList = () => {
     return (
         <Provider store={store}>
-            <div className='yContent'>
+            <div className='pContent'>
                 <PlayListCate />
                 <PlayListIfo />
             </div>

@@ -2,11 +2,11 @@
   width: 960px;
   overflow: hidden;
 }
-.PlayListIfo ul {
-  margin-left: -45px;
+.PlayListIfo ul.list {
+  margin-left: -50px;
   margin-top: 35px;
 }
-.PlayListIfo ul li {
+.PlayListIfo ul.list li {
   display: inline-block;
   width: 140px;
   font-size: 12px;
@@ -14,7 +14,7 @@
   padding-bottom: 30px;
   vertical-align: top;
 }
-.PlayListIfo ul li .msk {
+.PlayListIfo ul.list li .msk {
   display: block;
   position: absolute;
   width: 140px;
@@ -22,7 +22,40 @@
   background: url('../../../../../style/img/coverall.png') no-repeat;
   margin-bottom: -140px;
 }
-.PlayListIfo ul li img {
+.PlayListIfo ul.list li img {
   width: 140px;
   height: 140px;
+}
+.PlayListIfo .pages {
+  width: 900px;
+  text-align: center;
+}
+.PlayListIfo .pages li {
+  vertical-align: top;
+  padding: 0;
+  min: width 22px;
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+  border: 1px solid #d3d3d3;
+  border-radius: 0;
+  font-size: 12px;
+}
+.PlayListIfo .pages .ant-pagination-prev,
+.PlayListIfo .pages .ant-pagination-next {
+  width: 70px;
+}
+.PlayListIfo .pages .ant-pagination-prev a,
+.PlayListIfo .pages .ant-pagination-next a {
+  color: #000;
+}
+.PlayListIfo .pages .ant-pagination-item-active {
+  background-color: #c20c0c;
+}
+.PlayListIfo .pages .ant-pagination-item-active a {
+  color: #fff;
+}
+.PlayListIfo .pages .ant-pagination-item-active:hover {
+  border-color: #d3d3d3;
 }

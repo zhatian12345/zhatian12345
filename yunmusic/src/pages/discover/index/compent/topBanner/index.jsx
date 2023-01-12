@@ -42,8 +42,9 @@ const TopBanner=()=>{
                 <Carousel ref={Bannerswitch} effect="fade" className="bImage" autoplay>
                     {Banner.map((item, index) => {
                         const backstyle = {
-                            backgroundImage: 'url(' + item.imageUrl + '?imageView&blur=40x20)',
+                            backgroundImage: 'url(' + item.imageUrl + '?imageView&blur=20x40)',
                             backgroundSize: '6000px',
+                            backgroundPosition: 'center,center',
                         }
                         return (
                             <div key={index}>

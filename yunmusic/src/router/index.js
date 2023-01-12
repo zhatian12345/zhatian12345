@@ -15,10 +15,12 @@ function ROUTER() {
                 <Switch>
                     <Route exact path="/" component={DiscoverBar} />
                     <Route path="/discover" component={DiscoverBar} />
+                    <Route path="/playlist" component={DiscoverBar} />
                 </Switch>
                 <Switch>
                     <Route exact path="/" component={Discover} />
                     <Route exact path="/discover" component={Discover} />
+                    <Route path="/playlist" component={PlayList} />
                     <Route path="/discover/toplist" component={Toplist} />
                     <Route path="/discover/playlist" component={PlayList} />
                 </Switch>

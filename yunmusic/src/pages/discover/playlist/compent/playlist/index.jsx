@@ -1,37 +1,51 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
+
+import { Pagination } from 'antd';
 import { useSelector, useDispatch } from "react-redux";
 import { sendPlaylist } from '../../store/action'
-import { useLocation } from "react-router-dom";
+import { useLocation  } from "react-router-dom";
 import './index.css'
 
 const PlayListIfo = () => {
     let location = useLocation().search.split('?')[1];
-    let path = decodeURIComponent(location)
     if (location === undefined) {
-        path = 'cat=全部'
+        location = 'cat=全部'
     }
-    else if (location.indexOf('cat') == -1) {
-        path = 'cat=全部&order=hot'
+    else if (location.indexOf('cat') === -1) {
+        location = location+'&cat=全部'
     }
-    const urlres = path.replace(/&/g, '","').replace(/=/g, '":"');
-    const reqDataString = '{"' + urlres + '"}';
+    const urlres = location.replace(/&/g, '","').replace(/=/g, '":"');
+    const reqDataString = '{"' + decodeURIComponent(urlres) + '"}';
     const query = JSON.parse(reqDataString);
-    let cat = query.cat
-    let order = query.order
+    let offset = query.offset
+    query.offset = offset===undefined?0:Number(offset)
     query.limit = 35
-    query.offset = 0
-    console.log(query);
     const dispatch = useDispatch()
     const state = useSelector(state => state.Playlist)
     useEffect(() => {
         dispatch(sendPlaylist(query))
-    }, [])
-    console.log(state.playlists);
-    const pages = Math.ceil(state.total / 35);
+    }, [location])
+    // 页码
+    const pages = state.total === undefined ? 1 : Math.ceil(state.total / 35);
+    const itemRender = (_, type, originalElement) => {
+        if (type === 'prev') {
+            return <a>&lt;上一页</a>;
+        }
+        if (type === 'next') {
+            return <a>下一页&gt;</a>;
+        }
+        return originalElement;
+    };
+    const [current, setCurrent] = useState(1);
+    const onChange = (page) => {
+        setCurrent(page);
+        window.location.href=`/#/discover/playlist?cat=${query.cat}&order=hot&offset=${Number((page-1)*35)}&limit=35`
+    };
     return (
         <div className="PlayListIfo">
-            <ul>
+            <ul className="list">
                 {
+                    // 歌单列表
                     state.playlists === undefined ? '' : state.playlists.map((item, index) => {
                         return (
                             <li key={index}>
@@ -43,6 +57,7 @@ const PlayListIfo = () => {
                     })
                 }
             </ul>
+            <Pagination className="pages" current={current} onChange={onChange} showSizeChanger={false} total={pages * 10} itemRender={itemRender} />
         </div>
     )
 }

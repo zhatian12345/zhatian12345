@@ -1,0 +1,173 @@
+.dail-c .dail-c-left .song-introduce .song-img {
+  display: inline-block;
+  vertical-align: top;
+}
+.dail-c .dail-c-left .song-introduce .song-img .msk {
+  width: 208px;
+  height: 208px;
+  background: url('../../../../style/img/coverall.png') no-repeat -140px -580px;
+  margin-bottom: -208px;
+  position: absolute;
+}
+.dail-c .dail-c-left .song-introduce .song-img img {
+  width: 150px;
+  border-radius: 100%;
+  margin: 25px;
+}
+.dail-c .dail-c-left .song-introduce .song-cntc {
+  display: inline-block;
+  vertical-align: top;
+  width: 410px;
+  margin-left: 24px;
+  overflow: hidden;
+}
+.dail-c .dail-c-left .song-introduce .song-cntc p.t {
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+.dail-c .dail-c-left .song-introduce .song-cntc .creator {
+  font-size: 12px;
+  height: 35px;
+}
+.dail-c .dail-c-left .song-introduce .song-cntc .creator img {
+  width: 35px;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 10px;
+}
+.dail-c .dail-c-left .song-introduce .song-cntc .creator p {
+  display: block;
+  margin-bottom: 10px;
+}
+.dail-c .dail-c-left .song-introduce .song-cntc .creator p a {
+  color: #0c73c2;
+}
+.dail-c .dail-c-left .song-introduce .song-btn {
+  font-size: 12px;
+  margin: 20px  0;
+}
+.dail-c .dail-c-left .song-introduce .song-btn span {
+  display: inline-block;
+  vertical-align: top;
+  height: 31px;
+  line-height: 31px;
+  padding: 0 10px;
+  border-left: 1px solid #d3d3d3;
+  border-right: 1px solid #d3d3d3;
+  border-radius: 3px;
+  margin-right: 5px;
+  background: url('../../../../style/img/button2.png') no-repeat -5px -59px;
+}
+.dail-c .dail-c-left .song-introduce .song-btn span i {
+  display: inline-block;
+  width: 20px;
+  height: 18px;
+  vertical-align: top;
+  margin: 6px 2px 2px 0;
+}
+.dail-c .dail-c-left .song-introduce .song-btn span:hover {
+  border-left: 1px solid #d3d3d3;
+  border-right: 1px solid #d3d3d3;
+  background: url('../../../../style/img/button2.png') no-repeat -5px -141px;
+}
+.dail-c .dail-c-left .song-introduce .song-btn .play {
+  border: none;
+  margin-right: 0px;
+  color: #fff;
+  background: url('../../../../style/img/button.png') no-repeat 0px -720px;
+}
+.dail-c .dail-c-left .song-introduce .song-btn .play i {
+  background: url('../../../../style/img/button2.png') no-repeat 0 -1622px;
+}
+.dail-c .dail-c-left .song-introduce .song-btn .play:hover {
+  border: none;
+  background: url('../../../../style/img/button.png') no-repeat -80px -720px;
+}
+.dail-c .dail-c-left .song-introduce .song-btn .play:hover i {
+  background: url('../../../../style/img/button2.png') no-repeat -28px -1622px;
+}
+.dail-c .dail-c-left .song-introduce .song-btn .add {
+  width: 20px;
+  padding-right: 5px;
+  border: none;
+  background: url('../../../../style/img/button2.png') no-repeat 0 -1588px;
+}
+.dail-c .dail-c-left .song-introduce .song-btn .add:hover {
+  border: none;
+  background: url('../../../../style/img/button2.png') no-repeat -40px -1588px;
+}
+.dail-c .dail-c-left .song-introduce .song-btn .save i {
+  background: url('../../../../style/img/button2.png') no-repeat -5px -983px;
+}
+.dail-c .dail-c-left .song-introduce .song-btn .save:hover i {
+  background: url('../../../../style/img/button2.png') no-repeat -5px -1069px;
+}
+.dail-c .dail-c-left .song-introduce .song-btn .share i {
+  background: url('../../../../style/img/button2.png') no-repeat -5px -1232px;
+}
+.dail-c .dail-c-left .song-introduce .song-btn .share:hover i {
+  background: url('../../../../style/img/button2.png') no-repeat -5px -1275px;
+}
+.dail-c .dail-c-left .song-introduce .song-btn .down i {
+  background: url('../../../../style/img/button2.png') no-repeat -5px -2766px;
+}
+.dail-c .dail-c-left .song-introduce .song-btn .down:hover i {
+  background: url('../../../../style/img/button2.png') no-repeat -5px -2810px;
+}
+.dail-c .dail-c-left .song-introduce .song-btn .comment i {
+  background: url('../../../../style/img/button2.png') no-repeat -5px -1470px;
+}
+.dail-c .dail-c-left .song-introduce .song-btn .comment:hover i {
+  background: url('../../../../style/img/button2.png') no-repeat -5px -1513px;
+}
+.dail-c .dail-c-left .song-introduce .noopen {
+  max-height: 300px;
+  overflow: hidden;
+}
+.dail-c .dail-c-left .song-introduce .noopen p {
+  margin-bottom: 5px;
+}
+.dail-c .dail-c-left .song-introduce .open {
+  float: right;
+  color: #0c73c2;
+}
+.dail-c .dail-c-left .song-introduce .open:hover {
+  text-decoration: underline;
+}
+.dail-c .dail-c-right .r-title {
+  font-weight: bold;
+  width: 100%;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #d3d3d3;
+  margin-bottom: 20px;
+}
+.dail-c .dail-c-right .hot-song li img {
+  width: 50px;
+  vertical-align: top;
+  margin-bottom: 15px;
+  margin-right: 10px;
+}
+.dail-c .dail-c-right .hot-song li .p-name {
+  display: inline-block;
+  width: 130px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 13px;
+  font-weight: bold;
+}
+.dail-c .dail-c-right .hot-song li .p-name a {
+  color: #000;
+}
+.dail-c .dail-c-right .hot-song li .p-name a:hover {
+  text-decoration: underline;
+}
+.dail-c .dail-c-right .hot-song li .p-name span {
+  display: block;
+  margin-top: 3px;
+}
+.dail-c .dail-c-right .hot-song li .p-name span:nth-last-of-type(1) {
+  font-size: 12px;
+  font-weight: normal;
+  margin-top: 10px;
+}

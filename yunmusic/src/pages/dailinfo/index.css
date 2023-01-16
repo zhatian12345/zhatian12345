@@ -1,0 +1,21 @@
+.dail-c {
+  width: 1015px;
+  margin: 0 auto;
+  border: 1px solid #d3d3d3;
+}
+.dail-c .dail-c-left,
+.dail-c .dail-c-right {
+  display: inline-block;
+  vertical-align: top;
+}
+.dail-c .dail-c-left {
+  width: 670px;
+  padding: 45px 35px;
+  border-right: 1px solid #d3d3d3;
+  font-size: 12px;
+}
+.dail-c .dail-c-right {
+  width: 200px;
+  padding: 20px 40px 20px 30px;
+  font-size: 12px;
+}

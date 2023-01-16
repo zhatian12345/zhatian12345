@@ -72,7 +72,7 @@ const PlayListCate = () => {
                                             dom=dom.replace("&","%26")
                                             return (
                                                 <div key={inx}>
-                                                    <a className={cat===item.name?'checked':''} href={`/#/discover/playlist?cat=${dom}${order=='hot'?'&order=hot':''}`}>{itm.name}</a>
+                                                    <a className={cat===itm.name?'checked':''} href={`/#/discover/playlist?cat=${dom}${order=='hot'?'&order=hot':''}`}>{itm.name}</a>
                                                     <span>|</span>
                                                 </div>
                                             )

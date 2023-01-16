@@ -49,7 +49,7 @@ const PlayListIfo = () => {
                     state.playlists === undefined ? '' : state.playlists.map((item, index) => {
                         return (
                             <li key={index}>
-                                <a className="msk" href="/#/discover/playlist"></a>
+                                <a className="msk" href={`/#/playlist?id=${item.id}`}></a>
                                 <img src={item.coverImgUrl} alt="" />
                                 {item.name}
                             </li>

@@ -1,0 +1,284 @@
+.dail-c .dail-c-left .playlist-introduce .playlist-img {
+  display: inline-block;
+  vertical-align: top;
+}
+.dail-c .dail-c-left .playlist-introduce .playlist-img .msk {
+  width: 208px;
+  height: 208px;
+  background: url('../../../../style/img/coverall.png') no-repeat 0 -1285px;
+  margin-bottom: -208px;
+  position: absolute;
+}
+.dail-c .dail-c-left .playlist-introduce .playlist-img img {
+  width: 200px;
+  margin: 4px;
+}
+.dail-c .dail-c-left .playlist-introduce .playlist-cntc {
+  display: inline-block;
+  vertical-align: top;
+  width: 410px;
+  margin-left: 24px;
+  overflow: hidden;
+}
+.dail-c .dail-c-left .playlist-introduce .playlist-cntc p.t {
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+.dail-c .dail-c-left .playlist-introduce .playlist-cntc .creator {
+  font-size: 12px;
+  height: 35px;
+}
+.dail-c .dail-c-left .playlist-introduce .playlist-cntc .creator img {
+  width: 35px;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 10px;
+}
+.dail-c .dail-c-left .playlist-introduce .playlist-cntc .creator span {
+  display: inline-block;
+  height: 35px;
+  line-height: 35px;
+  margin-right: 15px;
+}
+.dail-c .dail-c-left .playlist-introduce .playlist-cntc .creator span:nth-of-type(1) {
+  color: #0c73c2;
+}
+.dail-c .dail-c-left .playlist-introduce .playlist-cntc .creator span:nth-of-type(2) {
+  color: #666;
+}
+.dail-c .dail-c-left .playlist-introduce .playlist-btn {
+  font-size: 12px;
+  margin-top: 20px;
+}
+.dail-c .dail-c-left .playlist-introduce .playlist-btn span {
+  display: inline-block;
+  vertical-align: top;
+  height: 31px;
+  line-height: 31px;
+  padding: 0 10px;
+  border-left: 1px solid #d3d3d3;
+  border-right: 1px solid #d3d3d3;
+  border-radius: 3px;
+  margin-right: 5px;
+  background: url('../../../../style/img/button2.png') no-repeat -5px -59px;
+}
+.dail-c .dail-c-left .playlist-introduce .playlist-btn span i {
+  display: inline-block;
+  width: 20px;
+  height: 18px;
+  vertical-align: top;
+  margin: 6px 2px 2px 0;
+}
+.dail-c .dail-c-left .playlist-introduce .playlist-btn span:hover {
+  border-left: 1px solid #d3d3d3;
+  border-right: 1px solid #d3d3d3;
+  background: url('../../../../style/img/button2.png') no-repeat -5px -141px;
+}
+.dail-c .dail-c-left .playlist-introduce .playlist-btn .play {
+  border: none;
+  margin-right: 0px;
+  color: #fff;
+  background: url('../../../../style/img/button.png') no-repeat 0px -720px;
+}
+.dail-c .dail-c-left .playlist-introduce .playlist-btn .play i {
+  background: url('../../../../style/img/button2.png') no-repeat 0 -1622px;
+}
+.dail-c .dail-c-left .playlist-introduce .playlist-btn .play:hover {
+  border: none;
+  background: url('../../../../style/img/button.png') no-repeat -80px -720px;
+}
+.dail-c .dail-c-left .playlist-introduce .playlist-btn .play:hover i {
+  background: url('../../../../style/img/button2.png') no-repeat -28px -1622px;
+}
+.dail-c .dail-c-left .playlist-introduce .playlist-btn .add {
+  width: 20px;
+  padding-right: 5px;
+  border: none;
+  background: url('../../../../style/img/button2.png') no-repeat 0 -1588px;
+}
+.dail-c .dail-c-left .playlist-introduce .playlist-btn .add:hover {
+  border: none;
+  background: url('../../../../style/img/button2.png') no-repeat -40px -1588px;
+}
+.dail-c .dail-c-left .playlist-introduce .playlist-btn .save i {
+  background: url('../../../../style/img/button2.png') no-repeat -5px -983px;
+}
+.dail-c .dail-c-left .playlist-introduce .playlist-btn .save:hover i {
+  background: url('../../../../style/img/button2.png') no-repeat -5px -1069px;
+}
+.dail-c .dail-c-left .playlist-introduce .playlist-btn .share i {
+  background: url('../../../../style/img/button2.png') no-repeat -5px -1232px;
+}
+.dail-c .dail-c-left .playlist-introduce .playlist-btn .share:hover i {
+  background: url('../../../../style/img/button2.png') no-repeat -5px -1275px;
+}
+.dail-c .dail-c-left .playlist-introduce .playlist-btn .down i {
+  background: url('../../../../style/img/button2.png') no-repeat -5px -2766px;
+}
+.dail-c .dail-c-left .playlist-introduce .playlist-btn .down:hover i {
+  background: url('../../../../style/img/button2.png') no-repeat -5px -2810px;
+}
+.dail-c .dail-c-left .playlist-introduce .playlist-btn .comment i {
+  background: url('../../../../style/img/button2.png') no-repeat -5px -1470px;
+}
+.dail-c .dail-c-left .playlist-introduce .playlist-btn .comment:hover i {
+  background: url('../../../../style/img/button2.png') no-repeat -5px -1513px;
+}
+.dail-c .dail-c-left .playlist-introduce .playlist-tag {
+  font-size: 12px;
+  margin-top: 20px;
+}
+.dail-c .dail-c-left .playlist-introduce .playlist-tag span {
+  color: #666;
+  margin-right: 10px;
+}
+.dail-c .dail-c-left .playlist-introduce .playlist-tag a {
+  display: inline-block;
+  height: 22px;
+  line-height: 22px;
+  padding: 0 13px;
+  border: 1px solid #d3d3d3;
+  border-radius: 50px;
+  color: #666;
+  margin: 0 5px;
+  background: url('../../../../style/img/button2.png') no-repeat -10px -308px;
+}
+.dail-c .dail-c-left .playlist-introduce .playlist-tag a:hover {
+  background: url('../../../../style/img/button2.png') no-repeat -10px -148px;
+}
+.dail-c .dail-c-left .playlist-introduce .playlist-description {
+  margin-top: 15px;
+  font-size: 12px;
+  color: #666;
+}
+.dail-c .dail-c-left .playlist-tracks {
+  margin-top: 20px;
+  font-size: 12px;
+}
+.dail-c .dail-c-left .playlist-tracks .tracks-dail {
+  width: 100%;
+  height: 30px;
+}
+.dail-c .dail-c-left .playlist-tracks .tracks-dail span {
+  margin-top: 9px;
+  float: left;
+}
+.dail-c .dail-c-left .playlist-tracks .tracks-dail .t-title {
+  margin-top: 0;
+  font-size: 20px;
+  margin-right: 20px;
+}
+.dail-c .dail-c-left .playlist-tracks .tracks-dail .t-playCount {
+  float: right;
+}
+.dail-c .dail-c-left .playlist-tracks .tracks-dail .t-playCount i {
+  color: #c20c0c;
+}
+.dail-c .dail-c-left .playlist-tracks table {
+  width: 100%;
+  border-spacing: 0;
+  border: 1px solid #d3d3d3;
+  border-top: 3px solid #c20c0c;
+}
+.dail-c .dail-c-left .playlist-tracks table th {
+  border-right: 1px solid #d3d3d3;
+  font-weight: normal;
+  color: #666;
+  padding: 10px;
+  text-align: left;
+  background: url('../../../../style/img/table.png') 0 1px;
+}
+.dail-c .dail-c-left .playlist-tracks table th:nth-last-of-type(1) {
+  border: none;
+}
+.dail-c .dail-c-left .playlist-tracks table td {
+  padding: 6px;
+  max-width: 100px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.dail-c .dail-c-left .playlist-tracks table td a {
+  color: #000;
+}
+.dail-c .dail-c-left .playlist-tracks table td a:hover {
+  text-decoration: underline;
+}
+.dail-c .dail-c-left .playlist-tracks table tbody tr:nth-of-type(even) {
+  background-color: #fff;
+}
+.dail-c .dail-c-left .playlist-tracks p {
+  width: 100%;
+  text-align: center;
+  margin: 20px auto;
+  font-size: 20px;
+}
+.dail-c .dail-c-left .playlist-tracks .down {
+  display: block;
+  width: 80px;
+  margin: 0 auto;
+  padding: 8px 15px;
+  font-size: 16px;
+  background-color: #c20c0c;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  text-align: center;
+}
+.dail-c .dail-c-right .r-title {
+  font-weight: bold;
+  width: 100%;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #d3d3d3;
+  margin-bottom: 20px;
+}
+.dail-c .dail-c-right .subscribers {
+  margin-bottom: 40px;
+}
+.dail-c .dail-c-right .subscribers li {
+  display: inline-block;
+  margin: 5px;
+}
+.dail-c .dail-c-right .subscribers li img {
+  width: 40px;
+}
+.dail-c .dail-c-right .subscribers li span {
+  position: fixed;
+  background-color: #000;
+  color: #fff;
+  padding: 5px;
+  display: none;
+}
+.dail-c .dail-c-right .subscribers li:hover span {
+  display: inline-block;
+}
+.dail-c .dail-c-right .hot-playlist li img {
+  width: 50px;
+  vertical-align: top;
+  margin-bottom: 15px;
+  margin-right: 10px;
+}
+.dail-c .dail-c-right .hot-playlist li .p-name {
+  display: inline-block;
+  width: 130px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 13px;
+  font-weight: bold;
+}
+.dail-c .dail-c-right .hot-playlist li .p-name a {
+  color: #000;
+}
+.dail-c .dail-c-right .hot-playlist li .p-name a:hover {
+  text-decoration: underline;
+}
+.dail-c .dail-c-right .hot-playlist li .p-name span {
+  display: block;
+  margin-top: 3px;
+}
+.dail-c .dail-c-right .hot-playlist li .p-name span:nth-last-of-type(1) {
+  font-size: 12px;
+  font-weight: normal;
+  margin-top: 10px;
+}

@@ -1,0 +1,246 @@
+@import '../../../../style/css/style.less';
+
+//颜色
+//尺寸
+//歌曲图片尺寸
+@song-Coverimage: 200px;
+
+.dail-c {
+    .dail-c-left {
+
+        // 歌单详情
+        .song-introduce {
+            .song-img {
+                display: inline-block;
+                vertical-align: top;
+
+                .msk {
+                    width: @song-Coverimage+8px;
+                    height: @song-Coverimage+8px;
+                    background: url('../../../../style/img/coverall.png') no-repeat -140px -580px;
+                    margin-bottom: -@song-Coverimage - 8px;
+                    position: absolute;
+                }
+
+                img {
+                    width: @song-Coverimage - 50px;
+                    border-radius: 100%;
+                    margin: 25px;
+                }
+            }
+
+            .song-cntc {
+                display: inline-block;
+                vertical-align: top;
+                width: 410px;
+                margin-left: 24px;
+                overflow: hidden;
+
+                p.t {
+                    font-size: 20px;
+                    margin-bottom: 12px;
+                }
+
+                .creator {
+                    font-size: @connect-font-size;
+                    height: 35px;
+
+                    img {
+                        width: 35px;
+                        display: inline-block;
+                        vertical-align: top;
+                        margin-right: 10px;
+                    }
+
+                    p {
+                        display: block;
+                        margin-bottom: 10px;
+
+                        a {
+                            color: #0c73c2;
+                        }
+                    }
+                }
+            }
+
+            //歌曲详情按钮
+            .song-btn {
+                font-size: @connect-font-size;
+                margin: 20px  0;
+                span {
+                    display: inline-block;
+                    vertical-align: top;
+                    height: 31px;
+                    line-height: 31px;
+                    padding: 0 10px;
+                    border-left: 1px solid @border-color;
+                    border-right: 1px solid @border-color;
+                    border-radius: 3px;
+                    margin-right: 5px;
+                    background: url('../../../../style/img/button2.png') no-repeat -5px -59px;
+
+                    i {
+                        display: inline-block;
+                        width: 20px;
+                        height: 18px;
+                        vertical-align: top;
+                        margin: 6px 2px 2px 0;
+                    }
+                }
+
+                span:hover {
+                    border-left: 1px solid @border-color;
+                    border-right: 1px solid @border-color;
+                    background: url('../../../../style/img/button2.png') no-repeat -5px -141px;
+                }
+
+                .play {
+                    border: none;
+                    margin-right: 0px;
+
+                    i {
+                        background: url('../../../../style/img/button2.png') no-repeat 0 -1622px;
+                    }
+
+                    color: #fff;
+                    background: url('../../../../style/img/button.png') no-repeat 0px -720px;
+                }
+
+                .play:hover {
+                    border: none;
+
+                    i {
+                        background: url('../../../../style/img/button2.png') no-repeat -28px -1622px;
+                    }
+
+                    background: url('../../../../style/img/button.png') no-repeat -80px -720px;
+                }
+
+                .add {
+                    width: 20px;
+                    padding-right: 5px;
+                    border: none;
+                    background: url('../../../../style/img/button2.png') no-repeat 0 -1588px;
+                }
+
+                .add:hover {
+                    border: none;
+                    background: url('../../../../style/img/button2.png') no-repeat -40px -1588px;
+                }
+
+                .save {
+                    i {
+                        background: url('../../../../style/img/button2.png') no-repeat -5px -983px;
+                    }
+                }
+
+                .save:hover {
+                    i {
+                        background: url('../../../../style/img/button2.png') no-repeat -5px -1069px;
+                    }
+                }
+
+                .share {
+                    i {
+                        background: url('../../../../style/img/button2.png') no-repeat -5px -1232px;
+                    }
+                }
+
+                .share:hover {
+                    i {
+                        background: url('../../../../style/img/button2.png') no-repeat -5px -1275px;
+                    }
+                }
+
+                .down {
+                    i {
+                        background: url('../../../../style/img/button2.png') no-repeat -5px -2766px;
+                    }
+                }
+
+                .down:hover {
+                    i {
+                        background: url('../../../../style/img/button2.png') no-repeat -5px -2810px;
+                    }
+                }
+
+                .comment {
+                    i {
+                        background: url('../../../../style/img/button2.png') no-repeat -5px -1470px;
+                    }
+                }
+
+                .comment:hover {
+                    i {
+                        background: url('../../../../style/img/button2.png') no-repeat -5px -1513px;
+                    }
+                }
+
+            }
+            //歌词
+            .noopen{
+                max-height: 300px;
+                overflow: hidden;
+                p{
+                    margin-bottom: 5px;
+                }
+            }
+            .open{
+                float: right;
+                color: #0c73c2
+            }
+            .open:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .dail-c-right {
+        .r-title {
+            font-weight: bold;
+            width: 100%;
+            padding-bottom: 10px;
+            border-bottom: 1px solid @border-color;
+            margin-bottom: 20px;
+        }   
+        .hot-song {
+            li {
+                img {
+                    width: 50px;
+                    vertical-align: top;
+                    margin-bottom: 15px;
+                    margin-right: 10px;
+                }
+
+                .p-name {
+                    display: inline-block;
+                    width: 130px;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    font-size: 13px;
+                    font-weight: bold;
+
+                    a {
+                        color: #000;
+                    }
+
+                    a:hover {
+                        text-decoration: underline;
+                    }
+
+                    span {
+                        display: block;
+                        margin-top: 3px;
+                    }
+
+                    span:nth-last-of-type(1) {
+                        font-size: @connect-font-size;
+                        font-weight: normal;
+                        margin-top: 10px;
+                    }
+                }
+            }
+        }
+    }
+}

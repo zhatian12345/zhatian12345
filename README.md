@@ -3,6 +3,8 @@
 #### 介绍
 基于react的网易云项目
 ![输入图片说明](Reademe/img%E5%9B%BE%E7%89%87.png)
+![输入图片说明](Reademe/img%E5%9B%BE%E7%89%87.png)
+![输入图片说明](Reademe/img%E5%9B%BE%E7%89%87.png)
 
 #### 软件架构
 1前端采用React.js框架进行编写

@@ -2,6 +2,7 @@
 
 #### 介绍
 基于react的网易云项目
+![输入图片说明](Reademe/img%E5%9B%BE%E7%89%87.png)
 
 #### 软件架构
 1前端采用React.js框架进行编写
@@ -9,7 +10,7 @@
 3采用Redux仓库管理
 4使用Axios进行与后端组件的交互
 5后端使用https://binaryify.github.io/NeteaseCloudMusicApi/#/所分享的api
-![输入图片说明](Reademe/img%E5%9B%BE%E7%89%87.png)
+
 
 #### 安装教程
 

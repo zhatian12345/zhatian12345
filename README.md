@@ -9,6 +9,7 @@
 3采用Redux仓库管理
 4使用Axios进行与后端组件的交互
 5后端使用https://binaryify.github.io/NeteaseCloudMusicApi/#/所分享的api
+![输入图片说明](Reademe/img%E5%9B%BE%E7%89%87.png)
 
 #### 安装教程
 

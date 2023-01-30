@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { sendPlaylistCatlist } from '../../store/action'
-import { useLocation } from "react-router-dom";
+import { useLocation,Link } from "react-router-dom";
 import './index.css'
 
 const PlayListCate = () => {
@@ -48,7 +48,7 @@ const PlayListCate = () => {
             <div className="cateTitle">
                 <h3>{cat}</h3>
                 <span onClick={checkshow}>全部分类</span>
-                <a href={`/#/discover/playlist?${cat=='全部'?'order=hot':'cat='+cat+'&order=hot'}`}>热门</a>
+                <a href={`#/discover/playlist?${cat=='全部'?'order=hot':'cat='+cat+'&order=hot'}`}>热门</a>
             </div>
             <div className={isshow?'cate':"nocate"}>
                 <div className="catetop">
@@ -56,7 +56,7 @@ const PlayListCate = () => {
                 </div>
                 <div className="catebody">
                     <h3>
-                        <a href="/#/discover/playlist">全部风格</a>
+                        <a href="#/discover/playlist">全部风格</a>
                     </h3>
                     {playlistcate.map((item, index) => {
                         return (
@@ -72,7 +72,7 @@ const PlayListCate = () => {
                                             dom=dom.replace("&","%26")
                                             return (
                                                 <div key={inx}>
-                                                    <a className={cat===itm.name?'checked':''} href={`/#/discover/playlist?cat=${dom}${order=='hot'?'&order=hot':''}`}>{itm.name}</a>
+                                                    <a className={cat===itm.name?'checked':''} href={`#/discover/playlist?cat=${dom}${order=='hot'?'&order=hot':''}`}>{itm.name}</a>
                                                     <span>|</span>
                                                 </div>
                                             )

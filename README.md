@@ -17,7 +17,7 @@
 
 #### 安装教程
 
-1.  下载https://binaryify.github.io/NeteaseCloudMusicApi/#/所分享的后端代码
+1.  下载https://binaryify.github.io/NeteaseCloudMusicApi/#/ 所分享的后端代码
 2.  下载本项目的所上传的源文件 git clone
 3.  分别在后端和前端文件根目录下使用 npm i安装所需包
 
